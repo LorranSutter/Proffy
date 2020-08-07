@@ -78,9 +78,10 @@ This will start expo CLI on your browser. A QR code will appear on your screen a
     - [ReactJS](https://reactjs.org/) - frontend library
     - [React router dom](https://www.npmjs.com/package/react-router-dom) - routing and navigation for react apps
     - [Axios](https://www.npmjs.com/package/axios) - HTTP requests
-<!-- 
+
 3. Mobile
 
     - [React Native](https://reactnative.dev/) - framework for mobile development
     - [Expo](https://expo.io/) - tool for helping mobile development with react native
-    - [React Native Maps](https://github.com/react-native-community/react-native-maps) - map component for iOS and Android -->
+    - [React Native Maps](https://github.com/react-native-community/react-native-maps) - map component for iOS and Android
+    - [React Navigation](https://reactnavigation.org/) - routing and navigation for react native apps
