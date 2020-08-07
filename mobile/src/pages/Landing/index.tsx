@@ -14,8 +14,12 @@ function Landing() {
 
     const { navigate } = useNavigation();
 
-    function handleNavigationToTeachPage() {
+    function handleNavigateToTeachPage() {
         navigate('Teach');
+    }
+
+    function handleNavigateToStudyPage() {
+        navigate('Study');
     }
 
     return (
@@ -28,13 +32,16 @@ function Landing() {
             </Text>
 
             <View style={styles.buttonsContainer}>
-                <RectButton style={[styles.button, styles.buttonPrimary]}>
+                <RectButton
+                    onPress={handleNavigateToStudyPage}
+                    style={[styles.button, styles.buttonPrimary]}
+                >
                     <Image source={studyIcon} />
                     <Text style={styles.buttonText}>Study</Text>
                 </RectButton>
 
                 <RectButton
-                    onPress={handleNavigationToTeachPage}
+                    onPress={handleNavigateToTeachPage}
                     style={[styles.button, styles.buttonSecondary]}
                 >
                     <Image source={teachIcon} />
