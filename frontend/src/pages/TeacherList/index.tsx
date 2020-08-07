@@ -28,8 +28,7 @@ function TeacherList() {
             }
         }).then(res => {
             setTeachers(res.data)
-        })
-            .catch()
+        });
     }
 
     return (
