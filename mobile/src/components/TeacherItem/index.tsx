@@ -8,36 +8,42 @@ import whatsappIcon from '../../assets/images/icons/whatsapp.png';
 
 import styles from './styles';
 
-function TeacherItem() {
+export interface Teacher {
+    subject: string;
+    cost: number;
+    id: number;
+    name: string;
+    avatar: string;
+    whatsapp: string;
+    bio: string;
+}
+
+interface TeacherItemProps {
+    teacher: Teacher
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
 
     return (
         <View style={styles.container}>
             <View style={styles.profile}>
                 <Image
                     style={styles.avatar}
-                    source={{ uri: 'https://github.com/diego3g.png' }}
+                    source={{ uri: teacher.avatar }}
                 />
 
                 <View style={styles.profileInfo}>
-                    <Text style={styles.name}>
-                        Diego Fernandes
-                    </Text>
-                    <Text style={styles.subject}>
-                        Chemistry
-                    </Text>
+                    <Text style={styles.name}>{teacher.name}</Text>
+                    <Text style={styles.subject}>{teacher.subject}</Text>
                 </View>
             </View>
 
-            <Text style={styles.bio}>
-                Bio Bio Bio Bio Bio Bio Bio Bio Bio Bio Bio Bio Bio Bio
-                </Text>
+            <Text style={styles.bio}>{teacher.bio}</Text>
 
             <View style={styles.footer}>
                 <Text style={styles.cost}>
                     Cost/hour {'   '}
-                    <Text style={styles.costValue}>
-                        $ 80,00
-                    </Text>
+                    <Text style={styles.costValue}>$ {teacher.cost}</Text>
                 </Text>
 
                 <View style={styles.buttonsContainer}>
