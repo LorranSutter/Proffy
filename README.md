@@ -1,6 +1,6 @@
 # Proffy - Next Level Week
 
-Project provided by [Rocket Seat](https://rocketseat.com.br/week/inscricao/11.0) to learn backend, frontend and mobile development employing React JS, React Native and Express.
+Project provided by [Rocket Seat](https://rocketseat.com.br) to learn backend, frontend and mobile development employing React JS, React Native and Express.
 
 [Proffy 2.0](https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970#a8d95e60733641e7886c60538db860a2)
 
